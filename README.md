@@ -1,20 +1,30 @@
-[![Jovo Framework](https://www.jovo.tech/img/github-logo.png)](https://www.jovo.tech)
+# Alexa Telly Remote
 
-<p align="center">Templates for the <a href="https://github.com/jovotech/jovo-framework-nodejs">Jovo Framework</a> ⭐️</p>
+Use alexa to tell a raspberry pi to switch the TV on/off
 
-<p align="center">
-<a href="https://www.jovo.tech/framework/docs/"><strong>Documentation</strong></a> -
-<a href="https://github.com/jovotech/jovo-cli"><strong>CLI </strong></a> - <a href="https://github.com/jovotech/jovo-framework-nodejs/blob/master/CONTRIBUTING.md"><strong>Contributing</strong></a> - <a href="https://twitter.com/jovotech"><strong>Twitter</strong></a></p>
-<br/>
 
-# Template: Hello World
+## Pre-requisites
+* A Raspberry Pi
+* An infrared transmitter such as HALJIA 38khz IR Transmitter and x6 female to female wires
+* A smart home speaker
 
-Jovo Sample Voice App with a simple "Hello World!" + asking for the user's name. This is the default template for the `jovo new` command:
+## Dependencies
+* LIRC (https://www/lirc.org) - Used to send the infrared commands
+* Jovo (https://www.jovo.tech) - Provides an easy way to link the Pi to Alexa
 
-```sh
-$ jovo new <directory>
 
-## Alternative
-$ jovo new <directory> --template helloworld
-```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Copyright {2019} {Jovo} {code adapted from Jovo Hello World Instance}*
