@@ -30,13 +30,18 @@ app.use(
 
 app.setHandler({
     LAUNCH() {
-        return this.toIntent('TellyIntent');
+     //   return this.toIntent('TVOnIntent');
+	this.ask("To hear commands, say alexa tv remote list");
     },
 
-    TellyIntent() {
-//        shell.irsend("SEND_ONCE LG KEY_POWER");
+    TVOnIntent() {
+
 	shell.exec('irsend SEND_ONCE LG KEY_POWER').code
-  },
+
+	setTimeout(() => {
+	shell.exec('irsend SEND_ONCE LG KEY_POWER').code  
+	}, 1000);
+ },
     
 });
 
