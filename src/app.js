@@ -29,20 +29,55 @@ app.use(
 // ------------------------------------------------------------------
 
 app.setHandler({
-    LAUNCH() {
-     //   return this.toIntent('TVOnIntent');
-	this.ask("To hear commands, say alexa tv remote list");
+
+    /**
+     * LAUNCH
+     * The default method for Alexa
+     * Triggered by the words 'TV Remote'
+     */
+
+     LAUNCH() {
+        this.tell("Say alexa TV Remote... Then your command");
     },
 
-    TVOnIntent() {
+    /**
+     * ON And OFF commands
+     * ON sends signal twice for greater accuracy
+     */
 
-	shell.exec('irsend SEND_ONCE LG KEY_POWER').code
+        TVOnIntent() {  
+            shell.exec('irsend SEND_ONCE LG KEY_POWER').code
+            
+            setTimeout(() => {
+            shell.exec('irsend SEND_ONCE LG KEY_POWER').code  
+            }, 1000);
 
-	setTimeout(() => {
-	shell.exec('irsend SEND_ONCE LG KEY_POWER').code  
-	}, 1000);
- },
-    
+        },
+
+        TVOffIntent() {
+            
+            shell.exec('irsend SEND_ONCE LG KEY_POWER').code
+        },
+
+    /**
+     * VOLUME UP, DOWN and MUTE commands
+     */
+
+
+        VolumeUpIntent() {
+            shell.exec('for i in {1..5}; do irsend SEND_ONCE LG KEY_VOLUMEUP; done;').code
+        },
+
+        VolumeDownIntent() {
+            shell.exec('for i in {1..5}; do irsend SEND_ONCE LG KEY_VOLUMEDOWN; done;').code
+        },
+
+        MuteIntent() {
+            shell.exec('irsend SEND_ONCE LG KEY_MUTE').code
+        },
+
+
+
 });
 
 module.exports.app = app;
