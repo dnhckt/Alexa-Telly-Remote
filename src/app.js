@@ -79,11 +79,22 @@ app.setHandler({
             shell.exec('irsend SEND_ONCE LG KEY_MUTE').code
         },
 
+    /**
+     * Switching source commands
+     */
 
-	TestIntent() {
-            this.tell("bruh");
-//	    this.tell(this.$inputs.name.value);
-	},
+        SourceOneIntent() {
+            shell.exec('irsend SEND_ONCE LG input').code
+            shell.exec('irsend SEND_ONCE LG KEY_LEFT').code
+            shell.exec('irsend SEND_ONCE LG KEY_OK').code
+        },
+
+        SourceTwoIntent() {
+            shell.exec('irsend SEND_ONCE LG input').code
+            shell.exec('irsend SEND_ONCE LG KEY_LEFT').code
+            shell.exec('irsend SEND_ONCE LG KEY_OK').code            
+        }
+
 
 
 });
