@@ -91,11 +91,9 @@ app.setHandler({
 
         SourceTwoIntent() {
             shell.exec('irsend SEND_ONCE LG input').code
-            shell.exec('irsend SEND_ONCE LG KEY_LEFT').code
+            shell.exec('irsend SEND_ONCE LG KEY_RIGHT').code
             shell.exec('irsend SEND_ONCE LG KEY_OK').code            
         }
-
-
 
 });
 
