@@ -11,10 +11,7 @@ const { JovoDebugger } = require('jovo-plugin-debugger');
 const { FileDb } = require('jovo-db-filedb');
 const shell = require('shelljs');
 
-
 const app = new App();
-
-
 
 app.use(
     new Alexa(),
@@ -37,7 +34,7 @@ app.setHandler({
      */
 
      LAUNCH() {
-        this.tell("Say alexa TV Remote... Then your command");
+        this.tell("Oh tits");
     },
 
     /**
@@ -45,9 +42,10 @@ app.setHandler({
      * ON sends signal twice for greater accuracy
      */
 
+
         TVOnIntent() {  
             shell.exec('irsend SEND_ONCE LG KEY_POWER').code
-            
+
             setTimeout(() => {
             shell.exec('irsend SEND_ONCE LG KEY_POWER').code  
             }, 1000);
@@ -55,7 +53,7 @@ app.setHandler({
         },
 
         TVOffIntent() {
-            
+
             shell.exec('irsend SEND_ONCE LG KEY_POWER').code
         },
 
@@ -65,17 +63,27 @@ app.setHandler({
 
 
         VolumeUpIntent() {
-            shell.exec('for i in {1..5}; do irsend SEND_ONCE LG KEY_VOLUMEUP; done;').code
-        },
+     //   shell.exec('for i in {1..10}; do irsend SEND_ONCE LG KEY_VOLUMEUP; done;').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEUP').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEUP').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEUP').code
+	 },
 
         VolumeDownIntent() {
-            shell.exec('for i in {1..5}; do irsend SEND_ONCE LG KEY_VOLUMEDOWN; done;').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEDOWN').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEDOWN').code
+          shell.exec('irsend SEND_ONCE LG KEY_VOLUMEDOWN').code
         },
 
         MuteIntent() {
             shell.exec('irsend SEND_ONCE LG KEY_MUTE').code
         },
 
+
+	TestIntent() {
+            this.tell("bruh");
+//	    this.tell(this.$inputs.name.value);
+	},
 
 
 });
