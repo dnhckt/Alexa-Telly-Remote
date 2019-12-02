@@ -1,0 +1,158 @@
+
+// Intents added on the amazon developer portal in conjunction with this code
+
+
+    		{
+                    "name": "TVOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "go on",
+                        "turn tv on ",
+                        "turn on ",
+                        "switch on",
+                        "on"
+                    ]
+                },
+                {
+                    "name": "TVOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "go off",
+                        "turn tv off",
+                        "switch off",
+                        "turn off",
+                        "off"
+                    ]
+                },
+                {
+                    "name": "TestIntent",
+                    "slots": [],
+                    "samples": [
+                        "arsemonkey",
+                        "arse",
+                        "monkey"
+                    ]
+                },
+                {
+                    "name": "VolumeUpIntent",
+                    "slots": [],
+                    "samples": [
+                        "go up",
+                        "turn it up ",
+                        "volume up ",
+                        "louder",
+                        "turn up ",
+                        "up"
+                    ]
+                },
+                {
+                    "name": "VolumeDownIntent",
+                    "slots": [],
+                    "samples": [
+                        "go down ",
+                        "turn it down ",
+                        "turn down",
+                        "volume down",
+                        "down"
+                    ]
+                },
+                {
+                    "name": "MuteIntent",
+                    "slots": [],
+                    "samples": [
+                        "unmute",
+                        "toggle mute",
+                        "mute"
+                    ]
+                },
+                {
+                    "name": "SourceOneIntent",
+                    "slots": [],
+                    "samples": [
+                        "switch to source one",
+                        "switch to digital tv",
+                        "switch to normal telly"
+                    ]
+                },
+                {
+                    "name": "SourceTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "switch to source two ",
+                        "switch to chromecast",
+                        "switch to the chromecast",
+                        "switch to netflix"
+                    ]
+                }    {
+                    "name": "TVOnIntent",
+                    "slots": [],
+                    "samples": [
+                        "go on",
+                        "turn tv on ",
+                        "turn on ",
+                        "switch on",
+                        "on"
+                    ]
+                },
+                {
+                    "name": "TVOffIntent",
+                    "slots": [],
+                    "samples": [
+                        "go off",
+                        "turn tv off",
+                        "switch off",
+                        "turn off",
+                        "off"
+                    ]
+                },
+               {
+                    "name": "VolumeUpIntent",
+                    "slots": [],
+                    "samples": [
+                        "go up",
+                        "turn it up ",
+                        "volume up ",
+                        "louder",
+                        "turn up ",
+                        "up"
+                    ]
+                },
+                {
+                    "name": "VolumeDownIntent",
+                    "slots": [],
+                    "samples": [
+                        "go down ",
+                        "turn it down ",
+                        "turn down",
+                        "volume down",
+                        "down"
+                    ]
+                },
+                {
+                    "name": "MuteIntent",
+                    "slots": [],
+                    "samples": [
+                        "unmute",
+                        "toggle mute",
+                        "mute"
+                    ]
+                },
+                {
+                    "name": "SourceOneIntent",
+                    "slots": [],
+                    "samples": [
+                        "switch to source one",
+                        "switch to digital tv",
+                        "switch to normal telly"
+                    ]
+                },
+                {
+                    "name": "SourceTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "switch to source two ",
+                        "switch to chromecast",
+                        "switch to the chromecast",
+                        "switch to netflix"
+                    ]
+                }
